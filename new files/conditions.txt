@@ -1,0 +1,3 @@
+- first move accurately with x yz
+- accurate sub parts and propelor movements of the vehicle
+- adding 2ndary 3rd objects for landing and take off platforms
