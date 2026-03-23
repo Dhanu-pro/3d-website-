@@ -46,7 +46,7 @@ a {
 
 .page-shell {
   position: relative;
-  min-height: 300vh;
+  min-height: 360vh;
   isolation: isolate;
 }
 
@@ -90,10 +90,11 @@ a {
 .story-shell {
   position: relative;
   z-index: 2;
+  padding-bottom: 24vh;
 }
 
 .story-panel {
-  min-height: 100vh;
+  min-height: 115vh;
   display: grid;
   align-content: center;
   gap: 1rem;
@@ -105,16 +106,22 @@ a {
 }
 
 .hero-panel {
-  padding-top: 12vh;
+  min-height: 110vh;
+  padding-top: 14vh;
 }
 
 .mid-panel {
-  margin-top: 18vh;
+  margin-top: 22vh;
 }
 
 .final-panel {
-  margin-top: 12vh;
-  padding-bottom: 16vh;
+  margin-top: 18vh;
+  padding-bottom: 20vh;
+}
+
+.section-2,
+.section-3 {
+  scroll-margin-top: 18vh;
 }
 
 .eyebrow {
@@ -166,10 +173,25 @@ a {
 }
 
 @media (max-width: 768px) {
+  .page-shell {
+    min-height: 330vh;
+  }
+
+  .story-shell {
+    padding-bottom: 18vh;
+  }
+
   .story-panel {
+    min-height: 105vh;
     margin-right: 0;
     max-width: 100%;
     padding: 1.5rem;
+  }
+
+  .hero-panel,
+  .mid-panel,
+  .final-panel {
+    margin-top: 0;
   }
 
   .story-panel h1 {

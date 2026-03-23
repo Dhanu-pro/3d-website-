@@ -25,13 +25,19 @@ function SceneContent({ scrollRootSelector, debug }) {
 
       <Suspense
         fallback={
-          <mesh>
-            <boxGeometry args={[0.4, 0.4, 0.4]} />
-            <meshStandardMaterial color="#8ecbff" emissive="#8ecbff" emissiveIntensity={0.75} />
-          </mesh>
+          <group>
+            <mesh>
+              <sphereGeometry args={[0.28, 24, 24]} />
+              <meshStandardMaterial color="#8ecbff" emissive="#8ecbff" emissiveIntensity={1.1} />
+            </mesh>
+            <mesh rotation={[Math.PI / 2, 0, 0]}>
+              <torusGeometry args={[0.52, 0.035, 16, 96]} />
+              <meshStandardMaterial color="#dff6ff" emissive="#dff6ff" emissiveIntensity={0.35} />
+            </mesh>
+          </group>
         }
       >
-        <ModelWithPropeller camera={camera} scrollRootSelector={scrollRootSelector} />
+        <ModelWithPropeller camera={camera} scrollRootSelector={scrollRootSelector} debug={debug} />
       </Suspense>
 
       <group position={[0, -1.18, 0]}>

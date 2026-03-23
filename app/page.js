@@ -7,28 +7,28 @@ export default function Home() {
       <div className="story-shell">
         <section className="story-panel hero-panel">
           <p className="eyebrow">VA-04 motion study</p>
-          <h1>Lift, rotate, and settle into frame.</h1>
+          <h1>Lift into focus with a locked propeller and guided camera move.</h1>
           <p className="lede">
-            A scroll-driven 3D landing page with a manually aligned propeller attachment, smooth Lenis scrolling,
-            and GSAP timing that keeps every moving part locked together.
+            Scroll starts with a measured reveal, holding the aircraft and propeller together under one parent group
+            while the camera frames the nose through a dedicated focus target.
           </p>
         </section>
 
-        <section className="story-panel mid-panel">
-          <p className="eyebrow">Mid scroll</p>
-          <h2>The body rotates while the attached propeller stays in place.</h2>
+        <section className="story-panel mid-panel section-2">
+          <p className="eyebrow">Orbit beat</p>
+          <h2>The aircraft banks and rotates as one assembly through the middle act.</h2>
           <p className="body-copy">
-            The parent group carries the entire assembly, so the propeller never drifts out of alignment when the
-            model shifts on the x, y, and z axes.
+            The GSAP timeline only animates the master group and camera, so the propeller housing stays attached to
+            the airframe while the internal rotor keeps spinning locally.
           </p>
         </section>
 
-        <section className="story-panel final-panel">
-          <p className="eyebrow">Final pass</p>
-          <h2>The vehicle glides away toward the landing and takeoff platforms.</h2>
+        <section className="story-panel final-panel section-3">
+          <p className="eyebrow">Departure beat</p>
+          <h2>The final section widens the frame and lets the vehicle glide out cinematically.</h2>
           <p className="body-copy">
-            The scene finishes with a slight camera pullback, extra platform objects in the environment, and a clean
-            production-ready exit.
+            The last scroll beat pulls the camera back, opens the scene, and keeps the aircraft locked on its focus
+            path as the departure move settles into place.
           </p>
         </section>
       </div>
